@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color: rgb(105, 194, 221);
+            --seccolor: rgb(7, 85, 107);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: #a2ecc1;
+            /* color: black; */
+            color: var(--color);
+            /* background-color: var(--color); */
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: 5px;
+            margin: 15px;
+            color: var(--seccolor);
+        }
+
+        .card {
+            width: 300px;
+            height: 450px;
+            border: 1px solid gray;
+            background-color: #fff;
+            border-radius: 13px;
+            padding: 7px;
+            margin: 50px;
+            position: relative;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .photo {
+            height: 45%;
+            width: 100%;
+            border-radius: 18px;
+        }
+
+        .capsules {
+            padding: 0px 10px;
+        }
+
+        .capsules span {
+            border: 1px solid gray;
+            border-radius: 15px;
+            font-size: 12px;
+            padding: 0px 8px;
+            margin: 5px;
+            /* margin: 10px; */
+        }
+
+        .text {
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .text h1 {
+            font-weight: 500;
+        }
+
+        .text p {
+            font-size: 15px;
+        }
+
+        button {
+            padding: 8px 20px;
+            border: 1px solid rgb(187, 187, 187);
+            border-radius: 15px;
+            font-size: 11px;
+            justify-content: center;
+            background-color: #d6e6dd;
+        }
+
+        .button {
+            text-align: center;
+
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: #5eb38b;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <head>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </head>
+
+    <div class="cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti eveniet possimus, optio
+        quam blanditiis, perferendis eos totam sequi eum cum. Laborum consequuntur inventore rerum ipsa repellat dicta
+        minus assumenda repudiandae rem saepe cupiditate quae natus, sint exercitationem! Omnis aliquid at maiores eos
+        perferendis. Sunt.</div>
+    <div class="bookmark">
+        <h1>My Bookmarks - Riya K</h1>
+        <h2>Primary Bookmarks</h2>
+        <p><a target="_blank" href="https://www.google.com">Open Google</a></p>
+        <p><a target="_blank" href="https://www.facebook.com">Open Facebook</a></p>
+        <p><a target="_blank" href="https://www.quora.com">Open Quora</a></p>
+        <p><a target="_blank" href="https://www.youtube.com">Open Youtube</a></p>
+        <p><a target="_blank" href="https://www.pinterest.com">Open Pinterest</a></p><br>
+        <h2>Secondary Bookmarks</h2>
+        <p><a target="_blank" href="https://www.wikipedia.com">Open wikipedia</a></p>
+    </div>
+    <br>
+    <hr><br>
+    <div class="card">
+        <!-- exercise 3 -->
+        <img class="photo" src="https://www.holidify.com/images/compressed/dest_wiki_13485.jpg" alt="Pune">
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="text">
+            <h1>Trip to Pune</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur corporis sit quod dicta aut.</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h1>css media query</h1>
+    <div>Hey I am a good girl!</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div><br>
+    <hr>
+
+
+    <main>
+
+        <div>
+
+        </div>
+    </main>
+    <div>
+
+    </div>
+
+</body>
+
+</html>

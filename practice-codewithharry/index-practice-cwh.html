@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML css revision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jura:wght@300..700&family=Merienda:wght@300..900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+TZ:wght@100..400&family=Protest+Riot&family=Silkscreen:wght@400;700&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            font-family: "Yatra One", system-ui, Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 50;
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            text-decoration: underline rgb(233, 95, 199);
+        }
+
+        h2 {
+            font-family: "Playwrite TZ", cursive, Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            font-size: 15px;
+            padding: 2px;
+            background-color: #4dce63;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: rgb(24, 119, 119);
+            text-decoration-style: wavy;
+            text-decoration-thickness: 3px;
+            text-indent: 45px;
+        }
+
+        .lorem {
+            border: 20px;
+            border-color: blueviolet;
+            width: 145px;
+            color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: rgb(46, 46, 42);
+        }
+
+        .box2 {
+            background-color: blue;
+            color: rgb(255, 0, 0);
+        }
+
+        .box3 {
+            background-color: rgb(240, 240, 240);
+            color: rgb(17, 0, 255);
+        }
+
+        .box5 {
+            border: 10px black;
+            margin: 2vw;
+            width: 20vw;
+            background-color: #6ad3a7;
+        }
+
+        box6 {
+            box-sizing: border-box;
+            border: 2px rgb(187, 137, 72);
+            color: #4d65ce;
+            font-size: 22px;
+            width: 100px;
+        }
+
+        /* 
+        /* CSS selectors */
+        /* 1. Element selector */
+        div {
+            /* background-color: red; */
+        }
+
+        /* 2. class selector */
+        .pink {
+            background-color: pink;
+        }
+
+        /* 3. Id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* 4. Child selector */
+        div>p {
+            color: rgb(0, 174, 255);
+            background-color: brown;
+        }
+
+        /* 5. descendent selector */
+        div p {
+            color: chartreuse;
+            background-color: forestgreen;
+        }
+
+        /* 6. Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 7. Pseudo selector */
+        a:visited {
+            color: crimson;
+        }
+
+        a:link {
+            color: darkorchid;
+        }
+
+        /* 8. Pseudo elements */
+        .boxes::before {
+            content: "Riya is a girl";
+            color: #4dce63;
+        }
+
+        .boxes::after {
+            content: "Riya lives in Pune";
+            color: #523bd3;
+        }
+
+        .boxes::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter {
+            color: darkred;
+            font-size: 30px;
+        }
+
+
+        /* transform translate rotate scale properties */
+        .container {
+            height: 60vh;
+            width: 100vw;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid purple;
+            background-color: #e5c6f1;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ade6eb;
+            /* transform: rotate(45deg); */
+            /* transform: rotateZ(30deg); */
+            /* transform: skewY(20deg); */
+            /* transform: translateX(34px); */
+            /* transform: translateX(100%) skewX(40deg) translateY(40%); */
+
+            /* transition-property: transform; */
+            /* transition-duration: 2s; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: .5s; */
+            transition: all 2s ease-in 0s;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        header .logo {
+            text-align: start;
+        }
+        header h1{
+
+        }
+        header p{
+            font-size: 10px;
+        }
+
+        header nav {
+            width: 25%;
+
+        }
+
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .container2{
+            height: 634px;
+            width: 688px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>UltraEdit</h1>
+            <p>An Idera Inc. Company</p>
+        </div>
+        <nav>
+            <ul>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Lets learn about colors</h1>
+    <h2>my fav color is green</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis accusamus commodi perspiciatis reiciendis,
+        autem, rerum ipsam minima ullam pariatur beatae ex dolorem! Sunt sequi natus accusantium, quod ullam autem!
+        Ipsum fugit nostrum non iste nulla ducimus praesentium dignissimos illo id?</p>
+    <h3 id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga quis assumenda numquam totam
+        tempora!</h3>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis.</p>
+    <div>
+        <p class="yellow red blue">Lorem ipsum dolor sit amet.</p>
+        <p class="box1">Lorem ipsum dolor sit amet.</p>
+        <p class="box2">Lorem ipsum dolor sit amet.</p>
+        <p class="box3">Lorem ipsum dolor sit amet.</p>
+        <p class="box4">Lorem ipsum dolor sit amet.</p>
+        <p class="box5">Lorem ipsum dolor sit amet.</p>
+        <div class="box6">This is a box. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore ab consequatur
+            nesciunt natus ea laudantium placeat corrupti consequuntur adipisci esse!</div>
+    </div>
+    <div class="container">
+        <div class="box translate">BOX</div>
+    </div>
+
+    <!-- css object-fit & position -->
+    <div class="container2">
+        <img src="https://www.imagelighteditor.com/img/bg-after.jpg" alt="">
+    </div>
+</body>
+
+</html>

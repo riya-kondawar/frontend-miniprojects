@@ -1,0 +1,119 @@
+/* h1{
+    color: firebrick;
+    background-color: burlywood;
+}
+
+p{
+    color: blueviolet;
+    background-color: #e4d17d;
+
+
+}
+
+button{
+    color: goldenrod;
+    background-color: #9e5656;
+} 
+
+h1{
+    text-align: center;
+    border: solid;
+    width: 100%;
+    font-weight: 100;
+
+}
+
+h2 {
+    font-weight: 800;
+    text-decoration: double rgb(24, 168, 89) overline;
+}
+h3{
+    text-align: right;
+    font-weight: bold;
+    text-decoration: red underline;
+}
+
+p{
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 2px;    
+}
+
+
+*/
+
+
+/* Position property */
+.pos-property div{
+    height: 100px;
+    width: 100px;
+    background-color: #cc94f1;
+    text-align: center;
+    border: 2px solid purple;
+    margin: 20px;
+    display: inline-block;
+}
+.pos-property #static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+.pos-property #relative{
+    background-color: yellow;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.pos-property #absolute{
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.pos-property #fixed{
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 300px;
+}
+.pos-property #stikcy{
+    background-color: yellow;
+    position: sticky;
+    top: 50px;
+    left: 50px;
+}
+
+/* smilie face */
+/* .smilie{
+    margin: 50px auto;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    border: 2px solid red;
+} */
+.face{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgb(255, 238, 0);
+}
+/* #smile .eyes{
+    top: 80px;
+    gap: 100px;
+}
+#smile .eye{
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    background-color: black;
+} */
+.mouth{
+    height: 75px;
+    width: 200px;
+    background-color: #d45959;
+    border-radius: 0 0 50px 50px;
+    top: 250px;
+    left: 100px;
+}

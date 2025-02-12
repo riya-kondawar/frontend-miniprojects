@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags in HTML</title>
+</head>
+<body>
+    <header>Website building</header>
+        <nav>
+            <ul>
+                <li><a href="/about.html"></a> About us</li>
+                <li><a href="/contact.html"></a> Contact us</li>
+            </ul>
+        </nav>
+    <main>
+    <div>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.netflix.com/in/">Netflix</a>
+        <a href="https://www.amazon.com/in/">Amazon</a>
+    </div>
+
+    <span>        
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.netflix.com/in/">Netflix</a>
+        <a href="https://www.amazon.com/in/">Amazon</a>
+    </span>
+
+    <img src="catimage.jpeg" alt="image" height="300px" width="300px">
+
+    <p>Twinkle twinkle little star how i wonder what you are!</p>
+    <p><b>Twinkle twinkle </b><br> <i>little star</i> <br> <u>how i wonder </u> <br>what you are!</p>
+    <p>H<sub>2</sub>O </p>
+    
+    <p>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></p>
+    <section>
+        <p>This is the broiler plater for table in HTML</p>
+        <table>
+            <caption>Table Caption</caption>
+                <tr>
+                    <th>header1</th>
+                    <th>header2</th>
+                </tr>
+                <tr>
+                    <td>data1</td>
+                    <td>data2</td>
+                </tr>
+        </table>
+    </section>
+    <section>
+        <table border="black">
+            
+                <caption>Food Menu</caption>
+            <!-- Table header -->
+            <thead>
+                <tr>
+                    <th rowspan="2">Item</th>
+                    <th colspan="2">Price</th>
+                </tr>
+                <tr>
+                    <th>INR</th>
+                    <th>USD</th>
+                </tr>
+            </thead>
+            <!-- Table body -->
+            <tbody>
+                <tr>
+                    <td>Frooti</td>
+                    <td>10</td>
+                    <td>0.14</td>
+                </tr>
+                <tr>
+                    <td>Samosa</td>
+                    <td>12</td>
+                    <td>0.17</td>
+                </tr>
+                <tr>
+                    <td>Chips</td>
+                    <td>20</td>
+                    <td>0.28</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section> 
+        <!-- form -->
+        <form action="/action">
+            <label>
+                Username:
+                <input type="text" placeholder="Enter Username" name="user"/>
+            </label>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter Password" id="password" name="pass"/>
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" id="color">
+            </div>
+            <div>
+                <button>Submit</button>
+                <button type="submit" name="">type1 submit</button>
+                <button type="button">type2 submit</button>
+                <button type="reset">type3 reset</button>
+                <input type="button" value="click me">
+                <input type="submit" value="click me submit">
+            </div>
+            
+            <div>
+                <input type="checkbox" name="age" id="age">
+                <label for="age">I am 18+</label>
+            </div>
+            <div>
+                <input type="radio" name="fruit" id="apple" value="apple">
+                <label for="apple">apple</label>
+                <br>
+                <input type="radio" name="fruit" id="mango" value="mango">
+                <label for="mango">mango</label>         
+                <br>
+                <input type="radio" name="fruit" id="banana" value="banana">
+                <label for="banana">banana</label>
+            </div>
+            <!--  dropdowns  -->
+            <div>
+                <select name="profession" id="profession">
+                    <option>Select your option</option>
+                    <option value="stu" selected>Student</option>
+                    <option value="dev">Developer</option>
+                </select>
+            </div>
+            <div>
+                <label for="vol">Select your Volume level</label>
+                <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="60">
+            </div>
+            <div>
+                <label for="feedback">Please give your feedback</label>
+                <textarea name="feedback" id="feedback" placeholder="Write your feedback here"></textarea>
+            </div>
+            
+
+        </form>
+    </section>
+    
+</main>
+
+<footer>Made with &hearts;</footer>
+</body>
+</html>

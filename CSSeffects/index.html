@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website CSS Effects</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #c8ecf5;
+      }
+      .container {
+        margin: 20px;
+        background-color: #cfa3f8;
+        width: fit-content;
+
+        h1,
+        h2 {
+          text-align: center;
+        }
+      }
+
+      /* container 1 */
+      #box {
+        height: 150px;
+        width: 250px;
+        background-color: #ac9ff7;
+        overflow: hidden;
+      }
+      #box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 1s;
+      }
+      #box:hover img {
+        scale: 1.1;
+      }
+
+      /* container 2 */
+      #gola {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: linear-gradient(to right yellow orange pink purple blue);
+        padding: 5px;
+      }
+      #gola img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Practice Assets for later use</h1>
+
+    <div class="container">
+      <h3>Image Hover Effect</h3>
+      <div id="box">
+        <img
+          src="https://img.freepik.com/free-photo/wet-sphere-reflective-water-abstract-beauty-generated-by-ai_188544-19616.jpg?semt=ais_hybrid"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>Colorful Border Effect</h3>
+      <div id="gola">
+        <img
+          src="https://i.pinimg.com/564x/b0/f9/6d/b0f96d3b7d5d787ea917c1a1096b76ab.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

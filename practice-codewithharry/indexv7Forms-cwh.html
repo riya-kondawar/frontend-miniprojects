@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- <style> 
+        .cont{
+            height: 10vh;
+            border: 2px solid brown;
+            display: flex;
+            /* justify-content: center; */
+            justify-content: space-around;
+            align-items: center;
+            /* flex-direction: column; */
+        }
+        .item{
+            height: 42px;
+            width: 42px;
+            margin: 4px;
+            border: 1px solid black;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style> 
+    -->
+    
+    <!-- CSS exercise 5 -->
+    <style>
+
+        /* :root{
+            --primary-color: #ab8cd4 ;
+            --text-color: white;
+            --seccolor: #e6d7fa;
+        } */
+        :root {
+            --primary-color: #44a86a;
+            --text-color: white;
+            --seccolor: #bceed1;
+        }
+
+        /* :root{
+            --primary-color: #427cb3 ;
+            --text-color: white;
+            --seccolor: #b3caec;
+        } */
+        body {
+            background-color: var(--seccolor);
+            font-family: "Poppins", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            height: 9vh;
+            background-color: rgba(136, 114, 117, 0.425);
+
+        }
+
+        nav {
+            background-color: rgb(136, 114, 117);
+            /* background-color: var(--primary-color); */
+            padding: 20px 0;
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.486);
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            color: var(--text-color);
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        main {
+            background-color: #b89292;
+            color: white;
+            padding: 34px;
+        }
+
+        .container {
+            background-color: #af8585;
+            margin: 12px 34px;
+            border: 1px solid rgba(255, 255, 255, 0.281);
+            padding: 55px 23px;
+            text-align: center;
+        }
+
+        .sq1 {
+            background-color: #d3a4a4;
+            height: 60vh;
+            width: 40%;
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        .sq2 {
+            background-color: #d8a5a5;
+            height: 60vh;
+            width: 40%;
+            display: inline-block;
+            margin: 0 12px;
+        }
+
+        .footer-icon {
+            height: 32px;
+            width: 32px;
+            background: #44a86a;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: 2px solid #622e6e;
+            border-radius: 60px;
+        }
+
+        footer {
+            height: 30vh;
+            background-color: bisque;
+        }
+
+        .txt {
+            padding: 30px;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 50px 34vw;
+            font-size: 2em;
+            border-radius: 13px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS multicolor website -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sq1"></div>
+            <div class="sq2"></div>
+        </div>
+        <div class="txt">
+            <p>Welcome to Sigma Web Dev class</p>
+        </div>
+        <div class="footer-icon"></div>
+        <div class="cont">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <!-- Form tag -->
+        <h3>Form to apply for internship by MITWPU college</h3>
+        <form action="post">
+            <div>
+                <label for="username">Enter your Username</label>
+                <input type="text" id="username" placeholder="Enter your Username">
+            </div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <div>
+                <label for="comment">Enter your comment here</label>
+                <textarea name="comment" rows="4" cols="30"></textarea>
+            </div>
+            <div>
+                <select name="fruits">
+                    <option value="none">None</option>
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                </select>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

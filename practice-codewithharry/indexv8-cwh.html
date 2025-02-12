@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background: #6c6ec5;
+        }
+
+        .box1 {
+            background-color: cyan;
+            padding: 10px;
+            margin: 5px;
+            border: 20px black;
+        }
+
+        .box2 {
+            width: 30vw;
+            height: 10vh;
+            border: 2px;
+            background-color: rgb(92, 255, 92);
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            justify-content: center;
+        }
+
+        .b {
+            border: 2px solid red;
+            display: inline-block;
+            width: 200px;
+            padding: 45px;
+            margin: 20px;
+            /* display: none; */
+        }
+
+        .b1 {
+            /* display: none; */
+            /* visibility: hidden; */
+            border: 4px solid #6c6ec5;
+            display: flex;
+            display: inline-block;
+
+            justify-content: center;
+
+            box-shadow: 5px 15px 10px 2px;
+        }
+
+        nav ul li {
+            list-style-type: devanagari;
+            list-style-type: none;
+            padding: 5px;
+            margin-left: 20px;
+            background-color: #c78989;
+            list-style-position: inside;
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .tab {
+            height: 300px;
+            width: 40vw;
+            padding: 5px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .tab1 {
+            background-color: #00ccff;
+            position: sticky;
+        }
+
+        .tab2 {
+            background-color: #9dff00;
+            /* position: absolute; */
+            top: 30px;
+            left: 50px;
+        }
+
+        .tab3 {
+            background-color: #ff00ff;
+            width: 20px;
+            /* position: relative; */
+            left: 10vw;
+            height: 80px;
+        }
+
+        .tab4 {
+            background-color: #4c00ff;
+        }
+
+        .parent {
+            width: 80vwpx;
+            padding: 43px;
+            margin: 20px;
+            border: 2px solid purple;
+            /* position: absolute; */
+            /* position: relative; */
+            /* position: fixed; */
+            /* position: sticky; */
+        }
+
+        /* transform , filtered & perspective properties can also make an element positioned. */
+    </style>
+
+<!-- java script -->
+    <script>
+        alert("Hello World")
+
+        console.log("Code is running")
+        console.log("Code is looking like a wow...")
+
+        var a = prompt("Enter your number:")
+        console.log("Your number is " + a)
+    </script>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <h1>About me</h1>
+    <div>Hi I'm Riya.</div>
+    <p>Nice to meet you </p>
+    <div class="box box1">i am a box.</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti, doloribus inventore dicta
+        molestias voluptatibus. Id velit vel quia obcaecati rem consequatur porro rerum mollitia! Quos pariatur veniam
+        corporis nemo. Deserunt exercitationem odit a possimus hic et nobis natus!</div>
+    <div class="b1">i am a new box.</div>
+    <span class="b">Text me</span>
+    <div class="parent">
+        <div class="tab tab1">Hey</div>
+        <div class="tab tab2">hola</div>
+        <div class="tab tab3">amigos</div>
+        <div class="tab tab4">wassup</div>
+    </div>
+
+    <br>
+    <hr>
+
+
+</body>
+
+</html>

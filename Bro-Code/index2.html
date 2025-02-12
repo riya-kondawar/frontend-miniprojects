@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        #myButton {
+            font-size: 3em;
+            padding: 5px 25px;
+            border-radius: 5px;
+        }
+        .labels{
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="myButton">roll</button><br>
+    <label id="myLabel1" class="labels"></label><br>
+    <label id="myLabel2" class="labels"></label><br>
+    <label id="myLabel3" class="labels"></label>
+
+    <script>
+
+        // Random num generator for Dice
+        const myButton = document.getElementById("myButton");
+        const myLabel1 = document.getElementById("myLabel1");
+        const myLabel2 = document.getElementById("myLabel2");
+        const myLabel3 = document.getElementById("myLabel3");
+        const min = 1;
+        const max = 6;
+        let rand1;
+        let rand2;
+        let rand3;
+
+        myButton.onclick = function () {
+            rand1 = Math.floor(Math.random() * max) + min;
+            rand2 = Math.floor(Math.random() * max) + min;
+            rand3 = Math.floor(Math.random() * max) + min;
+
+            myLabel1.textContent = rand1;
+            myLabel2.textContent = rand2;
+            myLabel3.textContent = rand3;
+        }
+
+    </script>
+</body>
+
+</html>
